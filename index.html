@@ -1,74 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to my personal website about ...">
+
+  <title>Simple Harmonic Oscillation</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Blog</h1>
-        <p>Sharing my thoughts and experiences</p>
-    </header>
-    
-    <main>
-        <section class="blog-posts">
-            <article class="post">
-                <h2>Understanding Simple Harmonic Motion (SHM)</h2>
-                <p class="date">Published on May 26, 2025</p>
-                
-                <p>
-                    Simple Harmonic Motion, or SHM, is a type of motion where an object moves back and forth repeatedly around an equilibrium position. It is one of the most common types of periodic motion seen in physics.
-                </p>
 
-                <p>
-                    A basic example of SHM is a mass attached to a spring. When you pull the mass and release it, it moves up and down repeatedly. This motion continues as long as there is no energy loss.
-                </p>
+  <h1>Simple Harmonic Oscillation</h1>
 
-                <p>
-                    In SHM, the motion is smooth and follows a regular pattern. The object takes the same amount of time to complete each cycle. This kind of motion is important in many areas of science and engineering.
-                </p>
+  <p>
+    Simple Harmonic Oscillation (SHO) is defined as a type of motion where the restoring force is directly proportional to the displacement from the equilibrium position and acts in the opposite direction.
+  </p>
 
-                <p>
-                    Examples of SHM include the motion of a pendulum, vibrations in a guitar string, and even small movements of buildings during earthquakes. It helps us understand sound, waves, and other physical phenomena.
-                </p>
+  <p>Mathematically, this is expressed as:</p>
+  <p>$$ F = -kx $$</p>
 
-                <p>
-                    In future posts, we'll explore more real-life examples and how SHM connects with other concepts in physics.
-                </p>
-            </article>
-        </section>
-        <article class="post">
-    <h2>Understanding Newton's Laws of Motion</h2>
-    <p class="date">Published on May 26, 2025</p>
+  <p>Where:</p>
+  <ul>
+    <li><strong>$F$</strong> is the restoring force</li>
+    <li><strong>$k$</strong> is the spring constant</li>
+    <li><strong>$x$</strong> is the displacement from equilibrium</li>
+  </ul>
 
-    <p>
-        Newton's Laws of Motion are three fundamental rules that explain how objects move. These laws were introduced by Sir Isaac Newton and are still used today to understand everyday motion as well as complex systems in physics.
-    </p>
+  <p>The motion of a simple harmonic oscillator is periodic and can be described by the following equations:</p>
 
-    <p>
-        The first law states that an object will remain at rest or keep moving in a straight line unless something forces it to change. This means things don't start or stop moving on their own.
-    </p>
+  <p>$$ x(t) = A \cos(\omega t + \phi) $$</p>
+  <p>$$ v(t) = -A\omega \sin(\omega t + \phi) $$</p>
+  <p>$$ a(t) = -A\omega^2 \cos(\omega t + \phi) $$</p>
 
-    <p>
-        The second law explains how force, mass, and motion are connected. If you push something harder, it moves faster. If it’s heavier, it’s harder to move.
-    </p>
+  <p>Where:</p>
+  <ul>
+    <li><strong>$x(t)$</strong> is the displacement at time $t$</li>
+    <li><strong>$A$</strong> is the amplitude</li>
+    <li><strong>$\omega$</strong> is the angular frequency, given by $\omega = \frac{2\pi}{T}$</li>
+    <li><strong>$\phi$</strong> is the phase constant</li>
+    <li><strong>$v(t)$</strong> is the velocity at time $t$</li>
+    <li><strong>$a(t)$</strong> is the acceleration at time $t$</li>
+  </ul>
 
-    <p>
-        The third law is the most famous: for every action, there is an equal and opposite reaction. If you push against a wall, the wall pushes back with the same force.
-    </p>
+  <p>The total mechanical energy of the system is conserved and given by:</p>
+  <p>$$ E = \frac{1}{2}kA^2 $$</p>
 
-    <p>
-        These laws are simple but powerful. They help explain how cars move, why we need seatbelts, how rockets launch, and much more.
-    </p>
-</article>
+  <p>
+    Simple harmonic motion is a fundamental concept in physics and is observed in systems like springs, pendulums, and molecular vibrations.
+  </p>
 
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 My Blog | <a href="#">Contact</a></p>
-    </footer>
+  <h2>Example</h2>
+
+  <p>
+    Consider a mass-spring system where a mass of 1 kg is attached to a spring with a spring constant of 100 N/m. If the mass is displaced by 0.1 m from its equilibrium position, the restoring force is:
+  </p>
+
+  <p>$$ F = -kx = -(100)(0.1) = -10 \, \text{N} $$</p>
+
+  <p>
+    The negative sign indicates that the force acts in the direction opposite to the displacement.
+  </p>
+
+  <p>The angular frequency is:</p>
+  <p>$$ \omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{100}{1}} = 10 \, \text{rad/s} $$</p>
+
+  <p>The period of oscillation is:</p>
+  <p>$$ T = \frac{2\pi}{\omega} = \frac{2\pi}{10} \approx 0.628 \, \text{s} $$</p>
+
+  <p>
+    Therefore, the motion of the mass is described by the equations of simple harmonic motion, and it will oscillate back and forth around the equilibrium position with a period of approximately 0.628 seconds.
+  </p>
+
+  <h2>References</h2>
+  <ul>
+    <li><a href="https://en.wikipedia.org/wiki/Simple_harmonic_motion" target="_blank">Simple Harmonic Motion – Wikipedia</a></li>
+    <li><a href="https://www.physicsclassroom.com/class/waves/Lesson-1/Simple-Harmonic-Motion" target="_blank">Simple Harmonic Motion – Physics Classroom</a></li>
+    <li><a href="https://www.khanacademy.org/science/physics/oscillatory-motion/simple-harmonic-motion" target="_blank">Simple Harmonic Motion – Khan Academy</a></li>
+    <li><a href="https://www.youtube.com/watch?v=1X9c6b2d4e0" target="_blank">Simple Harmonic Motion – YouTube</a></li>
+    <li><a href="https://www.youtube.com/watch?v=6j1b2d4e0e0" target="_blank">Simple Harmonic Motion – YouTube</a></li>
+    <li><a href="https://www.youtube.com/watch?v=3X9c6b2d4e0" target="_blank">Simple Harmonic Motion – YouTube</a></li>
+  </ul>
+
 </body>
 </html>
+
 
