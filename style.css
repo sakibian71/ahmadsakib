@@ -90,7 +90,7 @@ p, ul, li {
 
 /* Add subtle background highlight to inline code */
 code {
-  background-color: #e0e7ff;
+  background-color: #f0f4f8;
   color: #3730a3;
   padding: 0.2em 0.4em;
   border-radius: 4px;
