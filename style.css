@@ -1,116 +1,128 @@
-/* Reset some default spacing */
+/* General Reset */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Body styles */
+/* Body Styling */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 750px;
-  margin: 3rem auto;
-  padding: 1rem 2rem;
-  background: #f9fafb;
-  color: #333e4d;
-  line-height: 1.65;
-  font-size: 1.1rem;
-  letter-spacing: 0.02em;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
-  border-radius: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-/* Headings */
-h1, h2 {
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 0.8rem;
-  line-height: 1.2;
-  letter-spacing: 0.04em;
+/* Header */
+header {
+    text-align: center;
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px 10px;
+    border-radius: 0 0 10px 10px;
 }
 
-h1 {
-  font-size: 2.6rem;
-  border-bottom: 3px solid #3b82f6; /* Blue underline */
-  padding-bottom: 0.4rem;
-  margin-bottom: 2rem;
+/* Layout Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
 }
 
-h2 {
-  font-size: 1.8rem;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #93c5fd;
-  padding-bottom: 0.3rem;
+/* Sidebar (Aside) */
+aside {
+    flex: 1;
+    min-width: 200px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
 }
 
-/* Paragraphs */
-p {
-  margin: 1rem 0 1.5rem 0;
-  color: #4b5563; /* Slightly lighter text */
+aside ul {
+    list-style-type: none;
 }
 
-/* Lists */
-ul {
-  margin: 1rem 0 1.5rem 2rem;
-  list-style-type: disc;
-  color: #374151;
+aside li {
+    color: white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-li {
-  margin-bottom: 0.6rem;
-  line-height: 1.5;
+aside li:hover {
+    background-color: #1e90ff;
 }
 
-/* Links */
-a {
-  color: #2563eb; /* Blue links */
-  text-decoration: none;
-  transition: color 0.3s ease;
+/* Main Content */
+main {
+    flex: 3;
+    min-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-a:hover,
-a:focus {
-  color: #1e40af;
-  text-decoration: underline;
-  outline: none;
+main h2 {
+    color: #1e90ff;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-/* Math display (center and spacing) */
-p, ul, li {
-  word-wrap: break-word;
+main section {
+    margin-bottom: 20px;
 }
 
-.math-display {
-  text-align: center;
-  margin: 2rem 0;
-  font-size: 1.3rem;
-  color: #1e293b;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    margin-top: 40px;
 }
 
-/* Add subtle background highlight to inline code */
-code {
-  background-color: #f0f4f8;
-  color: #3730a3;
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
-  font-family: 'Fira Mono', monospace, monospace;
-  font-size: 0.95em;
+footer i {
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s, opacity 0.3s;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  body {
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-  }
+footer i:hover {
+    color: #1e90ff;
+    opacity: 0.7;
 }
+
+footer button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+footer button:hover {
+    background-color: #0d6efd;
+    opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside, main {
+        width: 100%;
+    }
+}
+
