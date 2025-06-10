@@ -1,101 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Welcome to my personal website about ...">
-
-  <title>Simple Harmonic Oscillation</title>
-  <link rel="stylesheet" href="style.css" />
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$']]
-      }
-    };
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <header>
+        <h1>Welcome to my Physics Blog</h1>
+        <h2>Explore the mystery of nature with us</h2>
+    </header>
 
-  <h1>Simple Harmonic Oscillation</h1>
+    <div class="container">
+        <aside>
+            <ul>
+                <li>Quantum Mechanics</li>
+                <li>Relativity</li>
+                <li>Thermodynamics</li>
+                <li>Astrophysics</li>
+            </ul>
+        </aside>
 
-   <img src="spring.jpeg" alt="Spring mass">
+        <main>
+            <section>
+                <h2>What is Quantum Mechanics?</h2>
+                <p>Quantum mechanics is a fundamental theory in physics that describes the behavior of matter and energy at the smallest scales, such as atoms and subatomic particles. It introduces concepts like wave-particle duality, quantization, and uncertainty, which challenge our classical understanding of the universe.</p>
+            </section>
+            <section>
+                <h2>What is Relativity?</h2>
+                <p>Relativity, developed by Albert Einstein, revolutionized our understanding of space, time, and gravity. It consists of two theories: special relativity, which deals with objects moving at constant speeds, and general relativity, which describes how gravity affects the fabric of spacetime.</p>
+            </section>
+        </main>
+    </div>
 
-
-  <p>
-    Simple Harmonic Oscillation (SHO) is defined as a type of motion where the restoring force is directly proportional to the displacement from the equilibrium position and acts in the opposite direction.
-  </p>
-
-  <p>Mathematically, this is expressed as:</p>
-  <p>$$ F = -kx $$</p>
-
-  <p>Where:</p>
-  <ul>
-    <li><strong>$F$</strong> is the restoring force</li>
-    <li><strong>$k$</strong> is the spring constant</li>
-    <li><strong>$x$</strong> is the displacement from equilibrium</li>
-  </ul>
-
-  <p>The motion of a simple harmonic oscillator is periodic and can be described by the following equations:</p>
-
-  <p>$$ x(t) = A \cos(\omega t + \phi) $$</p>
-  <p>$$ v(t) = -A\omega \sin(\omega t + \phi) $$</p>
-  <p>$$ a(t) = -A\omega^2 \cos(\omega t + \phi) $$</p>
-
-  <p>Where:</p>
-  <ul>
-    <li><strong>$x(t)$</strong> is the displacement at time $t$</li>
-    <li><strong>$A$</strong> is the amplitude</li>
-    <li><strong>$\omega$</strong> is the angular frequency, given by $\omega = \frac{2\pi}{T}$</li>
-    <li><strong>$\phi$</strong> is the phase constant</li>
-    <li><strong>$v(t)$</strong> is the velocity at time $t$</li>
-    <li><strong>$a(t)$</strong> is the acceleration at time $t$</li>
-  </ul>
-
-  <p>The total mechanical energy of the system is conserved and given by:</p>
-  <p>$$ E = \frac{1}{2}kA^2 $$</p>
-
-  <p>
-    Simple harmonic motion is a fundamental concept in physics and is observed in systems like springs, pendulums, and molecular vibrations.
-  </p>
-
-  <h2>Example</h2>
-
-  <p>
-    Consider a mass-spring system where a mass of 1 kg is attached to a spring with a spring constant of 100 N/m. If the mass is displaced by 0.1 m from its equilibrium position, the restoring force is:
-  </p>
-
-  <p>$$ F = -kx = -(100)(0.1) = -10 \, \text{N} $$</p>
-
-  <p>
-    The negative sign indicates that the force acts in the direction opposite to the displacement.
-  </p>
-
-  <p>The angular frequency is:</p>
-  <p>$$ \omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{100}{1}} = 10 \, \text{rad/s} $$</p>
-
-  <p>The period of oscillation is:</p>
-  <p>$$ T = \frac{2\pi}{\omega} = \frac{2\pi}{10} \approx 0.628 \, \text{s} $$</p>
-
-  <p>
-    Therefore, the motion of the mass is described by the equations of simple harmonic motion, and it will oscillate back and forth around the equilibrium position with a period of approximately 0.628 seconds.
-  </p>
-
- 
-
-  <h2>References</h2>
-  <ul>
-    <li><a href="https://en.wikipedia.org/wiki/Simple_harmonic_motion" target="_blank">Simple Harmonic Motion – Wikipedia</a></li>
-    <li><a href="https://www.physicsclassroom.com/class/waves/Lesson-1/Simple-Harmonic-Motion" target="_blank">Simple Harmonic Motion – Physics Classroom</a></li>
-    <li><a href="https://www.khanacademy.org/science/physics/oscillatory-motion/simple-harmonic-motion" target="_blank">Simple Harmonic Motion – Khan Academy</a></li>
-    <li><a href="https://www.youtube.com/watch?v=1X9c6b2d4e0" target="_blank">Simple Harmonic Motion – YouTube</a></li>
-    <li><a href="https://www.youtube.com/watch?v=6j1b2d4e0e0" target="_blank">Simple Harmonic Motion – YouTube</a></li>
-    <li><a href="https://www.youtube.com/watch?v=3X9c6b2d4e0" target="_blank">Simple Harmonic Motion – YouTube</a></li>
-  </ul>
-
+    <footer>
+        <p>© 2025 Physics Blog. All rights reserved.</p>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <p><button>Contact</button></p>
+    </footer>
 </body>
 </html>
+
 
 
